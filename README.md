@@ -99,7 +99,7 @@ Using concurrent index creation has its own side effects described in the
 in the [PostgreSQL documentation](https://www.postgresql.org/docs/current/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY),
 please read it carefully.
 
-The backport doesn'd add any additional side effects.
+The backport doesn't add any additional side effects.
 
 ### Safe transfer to the modern Django versions
 
