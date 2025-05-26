@@ -2,9 +2,19 @@
 [![Tests with postgres12](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres12.yml/badge.svg)](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres12.yml)
 [![Tests with postgres14](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres14.yml/badge.svg)](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres14.yml)
 
-# Django2-Postgres-Backports
+# Django2-Postgres-Backport
 
 The collection of backports for the Django v2.x using modern PostgreSQL features
+
+# Installation
+
+Latest version from the GIT repository:
+
+    pip install "git+git://github.com/nnseva/django2-postgres-backport.git"
+
+Stable version from the PyPi repository:
+
+    pip install django2-postgres-backport
 
 ## Using modern versions of the psycopg package
 

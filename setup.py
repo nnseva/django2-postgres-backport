@@ -1,6 +1,6 @@
 AUTHOR = 'Vsevolod Novikov'
 AUTHOR_EMAIL = 'nnseva@gmail.com'
-URL = 'https://github.com/nnseva/django2-postgres-backports'
+URL = 'https://github.com/nnseva/django2-postgres-backport'
 
 import django2_postgres
 
@@ -12,7 +12,7 @@ with open('README.rst') as f:
     long_description = f.read()
 
 setup(
-    name = 'django2-postgres-backports',
+    name = 'django2-postgres-backport',
     version = django2_postgres.__version__,
     description = description,
     author = AUTHOR,

@@ -1,5 +1,5 @@
 """
-Test backports
+Test backport
 """
 import io
 import json
@@ -12,7 +12,7 @@ from django.test import Client, TransactionTestCase
 
 class Test(TransactionTestCase):
     """
-    Test backports
+    Test backport
     """
 
     def test_001_proper_sql_generated(self):
