@@ -1,5 +1,5 @@
-# Django2-Postgres-Backport
-=======================
+Django2-Postgres-Backport
+=========================
 
 The collection of backports for the Django v2.x using modern PostgreSQL features
 
