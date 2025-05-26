@@ -1,3 +1,7 @@
+[![Tests with postgres9.6](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres9.yml/badge.svg)](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres9.yml)
+[![Tests with postgres12](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres12.yml/badge.svg)](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres12.yml)
+[![Tests with postgres14](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres14.yml/badge.svg)](https://github.com/nnseva/django2-postgres-backport/actions/workflows/test-postgres14.yml)
+
 # Django2-Postgres-Backports
 
 The collection of backports for the Django v2.x using modern PostgreSQL features
