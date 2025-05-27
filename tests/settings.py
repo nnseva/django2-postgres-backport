@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'tests.wsgi.application'
 DATABASE_NAME=os.environ.get('DATABASE_NAME', 'test')
 DATABASE_USER=os.environ.get('DATABASE_USER', 'test')
 DATABASE_PASSWORD=os.environ.get('DATABASE_PASSWORD', 'test')
-DATABASE_HOST=os.environ.get('DATABASE_HOST', 'test')
+DATABASE_HOST=os.environ.get('DATABASE_HOST', 'localhost')
 DATABASE_PORT=int(os.environ.get('DATABASE_PORT', '5432'))
 
 DATABASES = {
