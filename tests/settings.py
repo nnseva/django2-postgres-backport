@@ -5,8 +5,10 @@ Django settings.
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 from django2_postgres import psycopg_patch
+from django2_postgres import geos_patch
 
 psycopg_patch.fix()
+geos_patch.fix_geojson()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

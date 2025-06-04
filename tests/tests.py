@@ -3,12 +3,14 @@ Test backport
 """
 import io
 import json
+import logging
 import sys
 
 from django.conf import settings
 from django.core.management import call_command
 from django.test import Client, TransactionTestCase
 
+logger = logging.getLogger(__name__)
 
 class Test(TransactionTestCase):
     """
@@ -69,3 +71,15 @@ class Test(TransactionTestCase):
         """Test migrations available in both directions"""
         call_command('migrate', 'tests', 'zero')
         call_command('migrate', 'tests',)
+
+    def test_003_proper_geojson(self):
+        """Test for the proper GeoJSON generation"""
+        from django.contrib.gis.geos import GEOSGeometry
+        test = json.loads(GEOSGeometry('SRID=4326;POINT(2 1)').geojson)
+        self.assertEqual(int(test['coordinates'][0]), 2)
+        self.assertEqual(int(test['coordinates'][1]), 1)
+        test = json.loads(GEOSGeometry('SRID=4326;POINT(2 1)').json)
+        self.assertEqual(int(test['coordinates'][0]), 2)
+        self.assertEqual(int(test['coordinates'][1]), 1)
+        if not hasattr(GEOSGeometry, '_json_orig'):
+            logger.warning('GEOSGeometry has not been patched')
